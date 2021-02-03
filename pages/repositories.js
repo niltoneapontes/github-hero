@@ -1,11 +1,11 @@
 import SEO from '../components/SEO'
 import { Container, Title } from '../styles/pages'
 
-export default function Home() {
+export default function Repositories() {
   return (
     <>
       <SEO
-        title="Home" 
+        title="Repositórios" 
         image="githubImage.jpg" 
         shouldExcludeTitleSuffix={false}
         shouldIndexPage/>
