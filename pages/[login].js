@@ -5,6 +5,7 @@ import {FaTwitter, FaMailBulk, FaBlog, FaChevronLeft} from 'react-icons/fa';
 import SEO from '../components/SEO';
 import {ButtonContainer, Button} from '../components/Button';
 import theme from '../styles/theme';
+import Link from 'next/link';
 
 const Login = ({userData}) => {
   console.info(userData)
@@ -21,6 +22,7 @@ const Login = ({userData}) => {
         <UserImage src={userData.avatar_url} width={120} height={120} alt={userData.name}></UserImage>
         <Title>{userData.name}</Title>
         <p>@{userData.login}</p>
+        <p><em>{userData.bio}</em></p>
 
         <Aditional>
         <InfoList>
@@ -36,26 +38,22 @@ const Login = ({userData}) => {
           <h1>Repositories</h1>
           <p>{userData.public_repos}</p>
         </Info>
-        <Info>
-          <h1>Starred</h1>
-          <p>{userData.public_repos}</p>
-        </Info>
         </InfoList>
         <Contact>
           <li>
-            <a href={`https://twitter.com/${userData.twitter_username}`} target="_blank" alt="Twitter" title="Twitter"><FaTwitter size={32} color={theme.mode.light.color}></FaTwitter></a>
+            <a href={`${userData.twitter_username}`} target="_blank" alt="Twitter" title="Twitter"><FaTwitter size={32} color={theme.mode.light.color}></FaTwitter></a>
           </li>
           <li>
-            <a href={`https://twitter.com/${userData.email}`} target="_blank" alt="E-mail" title="E-mail"><FaMailBulk size={32} color={theme.mode.light.color}></FaMailBulk></a>
+            <a href={`${userData.email}`} target="_blank" alt="E-mail" title="E-mail"><FaMailBulk size={32} color={theme.mode.light.color}></FaMailBulk></a>
           </li>
           <li>
-            <a href={`https://twitter.com/${userData.blog}`} target="_blank" alt="Blog" title="Blog"><FaBlog size={32} color={theme.mode.light.color}></FaBlog></a>   
+            <a href={`${userData.blog}`} target="_blank" alt="Blog" title="Blog"><FaBlog size={32} color={theme.mode.light.color}></FaBlog></a>   
           </li>
         </Contact>
         </Aditional>
         <ButtonContainer>
-          <a href={`/repositories/${userData.login}`}><Button type="secondary">Ver repositórios</Button></a>
-          <a href=""><Button type="primary">Mais visitados</Button></a>
+          <Link href={`/repositories/${userData.login}`}><Button type="secondary">Ver repositórios</Button></Link>
+          <Link href={`/starred/${userData.login}`}><Button type="primary">Mais visitados</Button></Link>
         </ButtonContainer>
       </InfoContainer>
     </Container>
