@@ -1,7 +1,8 @@
 import React from 'react';
+import { FooterContainer } from '../styles/components/Footer';
 
 const Footer = () => (
-  <div>
+  <FooterContainer>
     <div>
       Icons made by{' '}
       <a href="https://www.freepik.com" title="Freepik">
@@ -13,7 +14,7 @@ const Footer = () => (
       </a>
     </div>
     ;
-  </div>
+  </FooterContainer>
 );
 
 export default Footer;

@@ -24,7 +24,7 @@ export const InfoContainer = styled.div`
   width: 50%;
 
   ${({ theme }) => theme.breakpoints.breakpoint_lg} {
-    width: 40%;
+    width: 30%;
   }
 
   p + p {
