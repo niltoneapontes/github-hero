@@ -20,11 +20,12 @@ export const InfoContainer = styled.div`
   justify-content: center;
   position: relative;
   background-color: ${({ theme }) => theme.mode.light.background};
-  padding: 52px;
-  width: 50%;
+  padding: 24px;
+  width: 80%;
 
   ${({ theme }) => theme.breakpoints.breakpoint_lg} {
     width: 30%;
+    padding: 52px;
   }
 
   p + p {
@@ -77,15 +78,22 @@ export const Contact = styled.ul`
     }
   }
 
-  a {
+  li a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    color: ${({ theme }) => theme.mode.light.color};
+    justify-content: center;
     text-decoration: none;
     text-align: right;
     transition: all 0.3s ease-in-out;
 
     &:hover {
       opacity: 0.8;
+    }
+
+    svg {
+      margin-left: 8px;
     }
   }
 `;
