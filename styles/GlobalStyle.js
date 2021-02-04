@@ -9,5 +9,7 @@ export default createGlobalStyle`
 
   body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
   }
 `;

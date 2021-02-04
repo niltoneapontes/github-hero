@@ -1,16 +1,27 @@
-import Head from 'next/head'
-import theme from '../styles/theme'
+import SearchModal from '../components/SearchModal'
+import SEO from '../components/SEO'
+import { Container, LogoContainer, Title } from '../styles/pages'
+import Image from 'next/image';
+import Icon from '../components/Icon';
+import theme from '../styles/theme';
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <h1 style={{fontFamily: theme.fonts.title}}>Isso é um título</h1>
-      <h1 style={{fontFamily: theme.fonts.text}}>Isso não é um título</h1>
+      <SEO
+        title="Home" 
+        image="githubImage.jpg" 
+        shouldExcludeTitleSuffix={false}
+        shouldIndexPage/>
+      <Container>
+        <LogoContainer>
+        <Icon size={104} color={theme.mode.light.background}></Icon>
+        <Title>
+          Github Hero
+        </Title>
+        </LogoContainer>
+        <SearchModal></SearchModal>
+      </Container>
     </>
   )
 }
