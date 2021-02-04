@@ -21,6 +21,17 @@ export const InfoContainer = styled.div`
   position: relative;
   background-color: ${({theme}) => theme.mode.light.background};
   padding: 52px;
+  width: 50%;
+
+  ${({theme}) => theme.breakpoints.breakpoint_lg} {
+    width: 40%;
+  }
+
+  p + p{
+    margin-top: 12px;
+    width: 90%;
+    text-align: center;
+  }
 `;
 
 export const UserImage = styled(Image)`
