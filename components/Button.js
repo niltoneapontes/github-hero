@@ -23,11 +23,10 @@ export const Button = styled.button`
   font-weight: bold;
   margin-top: 24px;
   transition: all 0.3s ease-in-out;
+  width: 100%;
 
   ${({theme}) => theme.breakpoints.breakpoint_sm} {
     margin-top: 0;
-    max-width: 160px;
-
   }
 
   &:hover {

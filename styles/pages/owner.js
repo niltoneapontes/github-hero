@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  background: ${({theme}) => theme.gradients.secondary};
+  background: ${({theme}) => theme.gradients.complementary};
   width: 100%;
   min-height: calc(100vh - 104px);
   display: flex;

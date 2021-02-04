@@ -1,20 +1,18 @@
 import React from 'react'
-import { Container, ProfileText } from '../styles/components/RepositoryCard';
+import { Container, ProfilePicture, ProfileText } from '../styles/components/Card';
 
-const RepositoryCard = ({href, name, owner, description, stars, forks, language}) => {
+const SearchModal = ({href, name, imageUrl, repos, followers, following}) => {
+  console.info(imageUrl)
   return (
       <Container href={href} target="_blank">
+        <ProfilePicture src={imageUrl} width={60} height={60} alt={name} />
         <ProfileText>
           <h3>{name}</h3>
-          {owner &&           <strong>@{owner}</strong>
-}
-          <p>{description}</p>
-          <p>Stars: {stars}</p>
-          <p>Forks: {forks}</p>
-          <p>{language}</p>
+          <p>Repos: {repos}</p>
+          <p>Followers: {followers} | Following: {following}</p>
         </ProfileText>
       </Container>
   )
 }
 
-export default RepositoryCard;
+export default SearchModal
