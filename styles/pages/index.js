@@ -16,6 +16,18 @@ export const LogoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: fadeUp 0.6s ease-in-out;
+
+  @keyframes fadeUp {
+    0% {
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 `;
 
 export const Title = styled.h1`
