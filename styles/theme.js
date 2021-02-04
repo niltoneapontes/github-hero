@@ -16,6 +16,7 @@ const theme = {
   gradients: {
     primary: 'linear-gradient(300deg, rgba(37,123,194,1) 0%, rgba(20,87,143,1) 100%);',
     secondary: 'linear-gradient(300deg, #C43182 0%, #DC58A0 100%);',
+    complementary: 'linear-gradient(300deg, #63B005 0%, #95D744 100%);'
   },
   mode: {
     dark: {
