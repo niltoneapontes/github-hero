@@ -17,6 +17,18 @@ export const Container = styled.a`
   box-shadow: ${({ theme }) => theme.mode.light.boxShadow};
   margin-top: 24px;
   transition: all 0.2s ease-in-out;
+  animation: fadeLeft 0.6s ease-in-out;
+
+  @keyframes fadeLeft {
+    0% {
+      transform: translateX(20%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
   & + article {
     margin-top: 12px;

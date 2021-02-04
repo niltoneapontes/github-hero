@@ -6,6 +6,7 @@ import {
   UserImage,
   Title,
   GoBack,
+  ScrollDown,
 } from '../../styles/pages/repositories';
 import SEO from '../../components/SEO';
 import RepositoryCard from '../../components/RepositoryCard';
@@ -20,6 +21,8 @@ const UserRepositories = ({ repositories }) => (
       shouldIndexPage
     />
     <Container>
+      <ScrollDown>Deslize para ver mais</ScrollDown>
+
       <GoBack href="..">
         <FaChevronLeft size={24} color={theme.mode.light.color} />
       </GoBack>
@@ -60,6 +63,7 @@ export const getServerSideProps = async context => {
       }, // will be passed to the page component as props
     };
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error('Error: ', error);
   }
   return {

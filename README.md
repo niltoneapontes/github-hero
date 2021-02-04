@@ -20,3 +20,26 @@ yarn dev
 ```
 
 * Abra [http://localhost:3000](http://localhost:3000) com seu browser.
+
+# Screenshots
+
+[![Screenshot 1](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot1.png "Screenshot1")](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot1.png "Screenshot1")
+
+[![Screenshot 2](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot2.png "Screenshot2")](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot2.png "Screenshot2")
+
+[![Screenshot 3](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot3.png "Screenshot3")](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot3.png "Screenshot3")
+
+
+[![Screenshot 4](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot4.png "Screenshot4")](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot4.png "Screenshot4")
+
+
+[![Screenshot 5](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot5.png "Screenshot5")](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot5.png "Screenshot5")
+
+
+[![Screenshot 6](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot6.png "Screenshot6")](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot6.png "Screenshot6")
+
+
+[![Screenshot 7](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot7.png "Screenshot7")](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot7.png "Screenshot7")
+
+
+[![Screenshot 8](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot8.png "Screenshot8")](https://github.com/niltoneapontes/github-hero/blob/develop/public/Screenshot8.png "Screenshot8")

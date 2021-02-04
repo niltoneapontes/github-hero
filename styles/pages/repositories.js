@@ -37,3 +37,32 @@ export const Title = styled.h1`
     font-size: 52px;
   }
 `;
+
+export const ScrollDown = styled.span`
+  background-color: ${({ theme }) => theme.mode.light.background};
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: ${({ theme }) => theme.mode.light.color};
+  font-weight: bold;
+  padding: 8px;
+  position: fixed;
+  top: 90vh;
+  animation: move 1s ease-in-out infinite;
+  z-index: 1;
+  box-shadow: ${({ theme }) => theme.mode.dark.boxShadow};
+
+  svg {
+    margin-bottom: 8px;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(8px);
+    }
+  }
+`;
