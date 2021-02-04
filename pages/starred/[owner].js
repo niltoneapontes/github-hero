@@ -10,6 +10,7 @@ import {
 import SEO from '../../components/SEO';
 import RepositoryCard from '../../components/RepositoryCard';
 import theme from '../../styles/theme';
+import { ScrollDown } from '../../styles/pages/repositories';
 
 const UserStarred = ({ repositories, userData }) => (
   <>
@@ -20,6 +21,7 @@ const UserStarred = ({ repositories, userData }) => (
       shouldIndexPage
     />
     <Container>
+      <ScrollDown>Deslize para ver mais</ScrollDown>
       <GoBack href="..">
         <FaChevronLeft size={24} color={theme.mode.light.background} />
       </GoBack>
