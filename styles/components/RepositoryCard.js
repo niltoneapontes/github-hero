@@ -29,6 +29,8 @@ export const ProfileText = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 12px;
+  width: 100%;
+  word-break: break-all;
 
   p {
     font-size: 16px;
