@@ -36,4 +36,8 @@ export const ProfileText = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 12px;
+
+  p {
+    font-size: 14px;
+  }
 `;

@@ -75,14 +75,3 @@ export default function SearchModal() {
     </Container>
   )
 }
-
-export const getServerSideProps = (context) => {
-  const localResultsString = localStorage.getItem('@GithubHero:results');
-  const localResults = JSON.parse(localResultsString);
-  console.info(localResults);
-  return {
-    props: {
-      localResults
-    }, // will be passed to the page component as props
-  }
-}
