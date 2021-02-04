@@ -66,6 +66,7 @@ const Login = ({ userData }) => (
                 title="Twitter"
                 rel="noreferrer"
               >
+                Twitter
                 <FaTwitter size={32} color={theme.mode.light.color} />
               </a>
             </li>
@@ -77,6 +78,7 @@ const Login = ({ userData }) => (
                 title="E-mail"
                 rel="noreferrer"
               >
+                E-mail
                 <FaMailBulk size={32} color={theme.mode.light.color} />
               </a>
             </li>
@@ -88,6 +90,7 @@ const Login = ({ userData }) => (
                 title="Blog"
                 rel="noreferrer"
               >
+                Blog
                 <FaBlog size={32} color={theme.mode.light.color} />
               </a>
             </li>
