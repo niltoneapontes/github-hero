@@ -1,8 +1,10 @@
 import React from 'react'
 import api from '../../services/api'
-import { Container, UserImage, Title } from '../../styles/pages/repositories';
+import { Container, UserImage, Title, GoBack } from '../../styles/pages/repositories';
 import SEO from '../../components/SEO';
 import RepositoryCard from '../../components/RepositoryCard';
+import { FaChevronLeft } from 'react-icons/fa';
+import theme from '../../styles/theme';
 
 const UserRepositories = ({repositories}) => {
   console.info(repositories)
@@ -16,6 +18,7 @@ const UserRepositories = ({repositories}) => {
     shouldExcludeTitleSuffix={false}
     shouldIndexPage/>
     <Container>
+      <GoBack href=".."><FaChevronLeft size={24} color={theme.mode.light.color}></FaChevronLeft></GoBack>
       <UserImage src={repositories[0].owner.avatar_url} width={120} height={120} alt={repositories[0].owner.login}></UserImage>
       <Title>{repositories[0].owner.login}</Title>
       {repositories && repositories.map(repository => (

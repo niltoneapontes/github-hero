@@ -1,8 +1,10 @@
 import React from 'react'
 import api from '../../services/api'
-import { Container, UserImage, Title } from '../../styles/pages/starred';
+import { Container, UserImage, Title, GoBack } from '../../styles/pages/starred';
 import SEO from '../../components/SEO';
 import RepositoryCard from '../../components/RepositoryCard';
+import { FaChevronLeft } from 'react-icons/fa';
+import theme from '../../styles/theme';
 
 const UserStarred = ({repositories, userData}) => {
   console.info(repositories, userData)
@@ -16,6 +18,7 @@ const UserStarred = ({repositories, userData}) => {
     shouldExcludeTitleSuffix={false}
     shouldIndexPage/>
     <Container>
+      <GoBack href=".."><FaChevronLeft size={24} color={theme.mode.light.background}></FaChevronLeft></GoBack>
       <UserImage src={userData.avatar_url} width={120} height={120} alt={userData.login}></UserImage>
       <Title>{userData.login}</Title>
       {repositories && repositories.map(repository => (
