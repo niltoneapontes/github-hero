@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  background: ${({theme}) => theme.gradients.secondary};
+  background: ${({ theme }) => theme.gradients.secondary};
   width: 100%;
   min-height: calc(100vh - 104px);
   display: flex;
@@ -19,15 +19,15 @@ export const InfoContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: ${({theme}) => theme.mode.light.background};
+  background-color: ${({ theme }) => theme.mode.light.background};
   padding: 52px;
   width: 50%;
 
-  ${({theme}) => theme.breakpoints.breakpoint_lg} {
+  ${({ theme }) => theme.breakpoints.breakpoint_lg} {
     width: 40%;
   }
 
-  p + p{
+  p + p {
     margin-top: 12px;
     width: 90%;
     text-align: center;
@@ -71,12 +71,12 @@ export const Contact = styled.ul`
   margin-top: 32px;
   align-items: flex-end;
 
-  li {   
+  li {
     & + li {
       margin-top: 12px;
     }
   }
-  
+
   a {
     display: flex;
     flex-direction: column;
@@ -95,18 +95,18 @@ export const Info = styled.li`
     margin-top: 12px;
   }
   h1 {
-    color: ${({theme}) => theme.mode.light.color};
-    font-family: ${({theme}) => theme.fonts.title};
+    color: ${({ theme }) => theme.mode.light.color};
+    font-family: ${({ theme }) => theme.fonts.title};
     font-size: 14px;
     text-align: left;
 
-    ${({theme}) => theme.breakpoints.breakpoint_sm} {
-    font-size: 18px;
-  }
+    ${({ theme }) => theme.breakpoints.breakpoint_sm} {
+      font-size: 18px;
+    }
   }
 
   p {
-    color: ${({theme}) => theme.mode.light.color};
+    color: ${({ theme }) => theme.mode.light.color};
     font-size: 14px;
     font-weight: normal;
     text-align: left;
@@ -114,12 +114,12 @@ export const Info = styled.li`
 `;
 
 export const Title = styled.h1`
-  color: ${({theme}) => theme.mode.light.color};
-  font-family: ${({theme}) => theme.fonts.title};
+  color: ${({ theme }) => theme.mode.light.color};
+  font-family: ${({ theme }) => theme.fonts.title};
   font-size: 24px;
   text-align: center;
 
-  ${({theme}) => theme.breakpoints.breakpoint_sm} {
+  ${({ theme }) => theme.breakpoints.breakpoint_sm} {
     font-size: 52px;
   }
 `;

@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
@@ -5,18 +6,20 @@ export default function SEO({
   description,
   image,
   shouldExcludeTitleSuffix = false,
-  shouldIndexPage = true
+  shouldIndexPage = true,
 }) {
-  const pageTitle = `${title} ${!shouldExcludeTitleSuffix ? ' | Github Hero' : ''}`
+  const pageTitle = `${title} ${
+    !shouldExcludeTitleSuffix ? ' | Github Hero' : ''
+  }`;
   const pageImage = image ? `http://localhost:3000/${image}` : null;
 
   return (
     <Head>
       <title>{pageTitle}</title>
 
-      { description && <meta name="description" content={description}/>}
-      { pageImage && <meta name="image" content={pageImage}/>}
-      { !shouldIndexPage && <meta name="robots" content="noindex, nofollow" />}
+      {description && <meta name="description" content={description} />}
+      {pageImage && <meta name="image" content={pageImage} />}
+      {!shouldIndexPage && <meta name="robots" content="noindex, nofollow" />}
 
       <meta httpEquiv="x-ua-compatible" content="IE=edge,chrome=1" />
       <meta name="MobileOptimized" content="320" />
@@ -47,7 +50,6 @@ export default function SEO({
       <meta name="twitter:image:alt" content="Thumbnail" />
       <meta name="twitter:image:width" content="1200" />
       <meta name="twitter:image:height" content="620" />
-
     </Head>
   );
 }
