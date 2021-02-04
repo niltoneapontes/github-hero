@@ -7,7 +7,7 @@ export const ButtonContainer = styled.section`
   justify-content: space-around;
   margin-top: 0;
 
-  ${({theme}) => theme.breakpoints.breakpoint_sm} {
+  ${({ theme }) => theme.breakpoints.breakpoint_sm} {
     flex-direction: row;
     margin-top: 52px;
   }
@@ -18,16 +18,15 @@ export const Button = styled.button`
   padding: 12px;
   border-radius: 12px;
   border: none;
-  background-color: ${({theme, type}) => theme.colors[type]};
-  color: ${({theme}) => theme.mode.light.background};
+  background-color: ${({ theme, type }) => theme.colors[type]};
+  color: ${({ theme }) => theme.mode.light.background};
   font-weight: bold;
   margin-top: 24px;
   transition: all 0.3s ease-in-out;
 
-  ${({theme}) => theme.breakpoints.breakpoint_sm} {
+  ${({ theme }) => theme.breakpoints.breakpoint_sm} {
     margin-top: 0;
     max-width: 160px;
-
   }
 
   &:hover {

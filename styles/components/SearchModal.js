@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  /* background: ${({theme}) => theme.mode.light.background}; */
+  /* background: ${({ theme }) => theme.mode.light.background}; */
   border-radius: 8px;
   margin-top: 24px;
   width: 100%;
@@ -11,7 +11,7 @@ export const Container = styled.main`
   align-items: center;
   justify-content: center;
 
-  ${({theme}) => theme.breakpoints.breakpoint_sm} {
+  ${({ theme }) => theme.breakpoints.breakpoint_sm} {
     width: 50%;
   }
 `;
@@ -19,42 +19,41 @@ export const Container = styled.main`
 export const Form = styled.form`
   width: 90%;
   display: flex;
-
 `;
 
 export const Input = styled.section`
-  background: ${({theme}) => theme.mode.light.background};
-  border: 2px solid ${({theme}) => theme.mode.light.background};
+  background: ${({ theme }) => theme.mode.light.background};
+  border: 2px solid ${({ theme }) => theme.mode.light.background};
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 48px;
-  color: ${({theme}) => theme.mode.light.color};
+  color: ${({ theme }) => theme.mode.light.color};
   font-size: 16px;
   width: 100%;
-  box-shadow: ${({theme}) => theme.mode.light.boxShadow};
+  box-shadow: ${({ theme }) => theme.mode.light.boxShadow};
   transition: all 0.2s ease-in-out;
 
-  &:hover{
-    border: 2px solid ${({theme}) => theme.colors.complementary};
+  &:hover {
+    border: 2px solid ${({ theme }) => theme.colors.complementary};
   }
 
   input {
-    background: ${({theme}) => theme.mode.light.background};
+    background: ${({ theme }) => theme.mode.light.background};
     border-radius: 48px;
     border: none;
-    color: ${({theme}) => theme.mode.light.color};
+    color: ${({ theme }) => theme.mode.light.color};
     padding: 24px 0 24px 24px;
     font-size: 16px;
     width: 100%;
 
-    ${({theme}) => theme.breakpoints.breakpoint_sm} {
+    ${({ theme }) => theme.breakpoints.breakpoint_sm} {
       flex: 1;
     }
   }
   button {
-    background-color: ${({theme}) => theme.mode.light.background};
-    color: ${({theme}) => theme.mode.light.color};
+    background-color: ${({ theme }) => theme.mode.light.background};
+    color: ${({ theme }) => theme.mode.light.color};
     cursor: pointer;
     border: none;
     border-radius: 24px;
@@ -70,9 +69,9 @@ export const Input = styled.section`
 `;
 
 export const Error = styled.span`
-  background-color: ${({theme}) => theme.colors.error};
+  background-color: ${({ theme }) => theme.colors.error};
   border-radius: 8px;
-  color: ${({theme}) => theme.mode.light.background};
+  color: ${({ theme }) => theme.mode.light.background};
   position: absolute;
   top: -52px;
   padding: 12px 24px;
@@ -80,12 +79,12 @@ export const Error = styled.span`
   animation: appear 0.3s ease-in-out;
 
   @keyframes appear {
-    from{
+    from {
       opacity: 0;
     }
-    to{
+    to {
       opacity: 1;
-    } 
+    }
   }
 `;
 

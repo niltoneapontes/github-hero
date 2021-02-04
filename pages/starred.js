@@ -1,20 +1,19 @@
-import SEO from '../components/SEO'
-import { Container, Title } from '../styles/pages'
+import React from 'react';
+import SEO from '../components/SEO';
+import { Container, Title } from '../styles/pages';
 
 export default function Starred() {
   return (
     <>
       <SEO
-        title="Starred" 
-        image="githubImage.jpg" 
+        title="Starred"
+        image="githubImage.jpg"
         shouldExcludeTitleSuffix={false}
-        shouldIndexPage/>
+        shouldIndexPage
+      />
       <Container>
-        <Title>
-          Github Hero
-        </Title>
-
+        <Title>Github Hero</Title>
       </Container>
     </>
-  )
+  );
 }
