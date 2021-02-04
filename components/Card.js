@@ -1,14 +1,17 @@
 import React from 'react'
-import { Container, ProfilePicture } from '../styles/components/Card';
+import { Container, ProfilePicture, ProfileText } from '../styles/components/Card';
 
-const SearchModal = ({name, imageUrl, repos}) => {
+const SearchModal = ({href, name, imageUrl, repos, followers, following}) => {
   console.info(imageUrl)
   return (
-    <Container>
-      <ProfilePicture src={imageUrl} width={60} height={60} alt={name} />
-      <h3>{name}</h3>
-      <p>{repos}</p>
-    </Container>
+      <Container href={href} target="_blank">
+        <ProfilePicture src={imageUrl} width={60} height={60} alt={name} />
+        <ProfileText>
+          <h3>{name}</h3>
+          <p>Repos: {repos}</p>
+          <p>Followers: {followers} | Following: {following}</p>
+        </ProfileText>
+      </Container>
   )
 }
 

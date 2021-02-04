@@ -10,7 +10,8 @@ const theme = {
     primary_light: '#5299D3',
     primary_dark: '#14578F',
     secondary: '#63B005',
-    complementary: '#C43182'
+    complementary: '#C43182',
+    error: '#F52828',
   },
   gradients: {
     primary: 'linear-gradient(300deg, rgba(37,123,194,1) 0%, rgba(20,87,143,1) 100%);',
